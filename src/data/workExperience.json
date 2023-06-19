@@ -1,0 +1,63 @@
+[
+  {
+    "company_name": "Shopee",
+    "company_logo": "shopee-logo.jpeg",
+    "location": "Jakarta, Indonesia",
+    "career": [
+      {
+        "title": "Software Engineer",
+        "description": [
+          "Backend Development for Order Team - Product Detail Page",
+          "Support business features",
+          "Developed and maintained backend services for Shopee",
+          "Collaborated with frontend developers, quality assurance, and product managers to ensure seamless integration of software components and successful project delivery",
+          "Conducted root cause analysis and resolved technical issues"
+        ],
+        "start_date": "02/2023",
+        "end_date": "present"
+      },
+      {
+        "title": "Junior Engineer",
+        "description": [
+          "Participate in 6 months structured training covering software engineering fundamentals in full-stack web development"
+        ],
+        "start_date": "08/2022",
+        "end_date": "01/2023"
+      }
+    ]
+  },
+  {
+    "company_name": "Stickearn",
+    "company_logo": "stickearn-logo.jpg",
+    "location": "Jakarta, Indonesia",
+    "career": [
+      {
+        "title": "Data Engineer Intern",
+        "description": [
+          "Data warehousing using Google Cloud Platform",
+          "Created Data Visualization"
+        ],
+        "start_date": "02/2022",
+        "end_date": "05/2022"
+      }
+    ]
+  },
+  {
+    "company_name": "Kawan Lama Group",
+    "company_logo": "kawan-lama-logo.png",
+    "location": "Jakarta, Indonesia",
+    "career": [
+      {
+        "title": "Data Engineer Intern",
+        "description": [
+          "Data extraction using R (data ingestion and data cleansing)",
+          "ETL pipeline using Amazon Web Services",
+          "Maintain end-to-end Pipeline",
+          "Created Data Visualization"
+        ],
+        "start_date": "07/2021",
+        "end_date": "01/2022"
+      }
+    ]
+  }
+]

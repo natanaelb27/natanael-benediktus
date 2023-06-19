@@ -1,12 +1,17 @@
 import { Button } from "react-daisyui";
 import { Outlet } from "react-router-dom";
 import { HiArrowSmUp } from "react-icons/hi";
+import { useAppDispatch, useAppSelector } from "../../store";
+import {
+  mobileMenuClicked,
+  selectIsMenuOpen,
+} from "../../store/slices/mobileMenuSlice";
 
 import { Footer, Header } from "../common";
 import { useScrollPosition } from "../../hooks";
-
 const Layout = () => {
   const scrollPosition = useScrollPosition();
+  const isMenuOpen = useAppSelector(selectIsMenuOpen);
 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -15,7 +20,7 @@ const Layout = () => {
   return (
     <div className="bg-base-300 min-h-screen">
       <Header />
-      <main className="bg-base-100 px-12 sm:px-52">
+      <main className="bg-base-100">
         <Outlet />
       </main>
       <Footer />

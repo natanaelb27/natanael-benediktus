@@ -1,6 +1,6 @@
 import { Navigate, Outlet, useRoutes } from "react-router-dom";
-import Layout from "../components/Layout";
 import { Home } from "../pages";
+import { Layout } from "../components";
 
 const Routes = () => {
   return useRoutes([
