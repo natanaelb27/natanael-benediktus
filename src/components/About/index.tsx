@@ -7,20 +7,9 @@ const About = () => {
   };
 
   return (
-    <div className="px-12 lg:px-52 py-10">
-      <h1 className="text-3xl font-semibold">About</h1>
-      <Divider></Divider>
-      <div className="flex flex-col xl:flex-row gap-12">
-        <div className="flex justify-center align-middle">
-          <Carousel
-            buttonStyle={buttonStyle}
-            className="rounded-box w-96 md:h-96"
-          >
-            <Carousel.Item className="w-full" src={ProfilePicture} />
-            <Carousel.Item className="w-full" src={ProfilePicture} />
-            <Carousel.Item className="w-full" src={ProfilePicture} />
-          </Carousel>
-        </div>
+    <div className="items-start flex flex-col md:flex-row gap-4 md:gap-16 md:mr-16 xl:mr-32">
+      <h1 className="text-md text-right font-semibold md:basis-1/4">ABOUT</h1>
+      <div className="flex flex-col gap-8 md:basis-3/4">
         <div className="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
           quibusdam eligendi! Iure tempora veniam libero neque aliquam

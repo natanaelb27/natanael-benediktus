@@ -18,9 +18,9 @@ const Layout = () => {
   };
 
   return (
-    <div className="bg-base-300 min-h-screen">
+    <div className="min-h-screen">
       <Header />
-      <main className="bg-base-100">
+      <main className="bg-base-100 flex flex-col px-8 pb-5 gap-16 xl:gap-24 xl:pl-24">
         <Outlet />
       </main>
       <Footer />

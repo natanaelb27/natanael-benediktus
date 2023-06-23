@@ -1,10 +1,10 @@
-import { HomeSection, AboutSection, WorkSection } from "../../components";
+import { HomeSection, AboutSection, ExperienceSection } from "../../components";
 const Home = () => {
   return (
     <>
       <HomeSection />
       <AboutSection />
-      <WorkSection />
+      <ExperienceSection />
     </>
   );
 };

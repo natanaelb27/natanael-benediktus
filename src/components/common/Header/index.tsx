@@ -33,7 +33,7 @@ const Header = () => {
             href="/"
             className="font-semibold hover:text-red-400 cursor-pointer"
           >
-            Works
+            Experience
           </a>
           <a
             href="/"
