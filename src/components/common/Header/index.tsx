@@ -10,6 +10,18 @@ import {
 const Header = () => {
   const isMenuOpen = useAppSelector(selectIsMenuOpen);
   const dispatch = useAppDispatch();
+
+  const handleClickScroll = (section: string) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <header className="py-5 px-12 sm:px-24 md:px-52 bg-base-100 border-b-2 shadow-md sticky top-0 z-10">
       <div className="flex items-center justify-between">
@@ -18,19 +30,19 @@ const Header = () => {
         </a>
         <div className="hidden md:flex justify-start gap-5">
           <a
-            href="/#home"
+            onClick={() => handleScrollToTop()}
             className="font-semibold hover:text-red-400 cursor-pointer"
           >
             Home
           </a>
           <a
-            href="/#about"
+            onClick={() => handleClickScroll("about-section")}
             className="font-semibold hover:text-red-400 cursor-pointer"
           >
             About
           </a>
           <a
-            href="/"
+            onClick={() => handleClickScroll("experience-section")}
             className="font-semibold hover:text-red-400 cursor-pointer"
           >
             Experience

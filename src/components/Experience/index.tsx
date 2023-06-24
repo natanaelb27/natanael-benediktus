@@ -110,7 +110,7 @@ const Work = () => {
   });
 
   return (
-    <div className="items-start flex flex-col md:flex-row gap-4 md:gap-16 md:mr-16 xl:mr-32">
+    <div className="items-start flex flex-col md:flex-row gap-4 md:gap-16">
       <h1 className="text-md text-right font-semibold md:basis-1/4">
         EXPERIENCE
       </h1>
