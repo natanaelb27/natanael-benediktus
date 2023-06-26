@@ -8,7 +8,7 @@ type WorkExperienceCareer = {
   end_date?: string;
 };
 
-const Work = () => {
+const Experience = () => {
   const getAbsoluteMonths = (momentDate: moment.Moment) => {
     var months = Number(momentDate.format("MM"));
     var years = Number(momentDate.format("YYYY"));
@@ -40,12 +40,12 @@ const Work = () => {
       return (
         <div className="flex flex-col">
           <span className="font-light text-md">{location}</span>
-          {career.map((c) => {
+          {career.map((c, i) => {
             let { startDateString, endDateString, monthDiff } =
               GetWorkExperienceDateInfo(c);
 
             return (
-              <div className="flex flex-col text-left mt-2">
+              <div key={i} className="flex flex-col text-left mt-2">
                 <span className="text-md font-semibold">{c.title}</span>
                 <div>
                   <span className="font-light text-md">
@@ -54,8 +54,12 @@ const Work = () => {
                 </div>
                 <div className="pl-4 mt-1 text-md">
                   <ul className="list-disc">
-                    {c.description?.map((desc: string) => {
-                      return <li className="font-light">{desc}</li>;
+                    {c.description?.map((desc, i) => {
+                      return (
+                        <li key={i} className="font-light">
+                          {desc}
+                        </li>
+                      );
                     })}
                   </ul>
                 </div>
@@ -81,8 +85,12 @@ const Work = () => {
         <span className="font-light text-md">{location}</span>
         <div className="pl-4 mt-1 text-md">
           <ul className="list-disc">
-            {c.description?.map((desc: string) => {
-              return <li className="font-light">{desc}</li>;
+            {c.description?.map((desc, i) => {
+              return (
+                <li key={i} className="font-light">
+                  {desc}
+                </li>
+              );
             })}
           </ul>
         </div>
@@ -90,10 +98,10 @@ const Work = () => {
     );
   };
 
-  const WorkExperience = WorkExperienceData.map((data) => {
+  const WorkExperience = WorkExperienceData.map((data, i) => {
     const logo = require("../../assets/images/" + data.company_logo);
     return (
-      <div className="flex gap-3">
+      <div key={i} className="flex gap-3">
         <img
           src={logo}
           alt={data.company_logo}
@@ -117,4 +125,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Experience;

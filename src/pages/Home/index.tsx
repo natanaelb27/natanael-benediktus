@@ -1,4 +1,9 @@
-import { HomeSection, AboutSection, ExperienceSection } from "../../components";
+import {
+  HomeSection,
+  AboutSection,
+  ExperienceSection,
+  ProjectSection,
+} from "../../components";
 const Home = () => {
   return (
     <>
@@ -13,6 +18,9 @@ const Home = () => {
       </div>
       <div id="experience-section" className="md:mr-16 xl:mr-32 scroll-mt-24">
         <ExperienceSection />
+      </div>
+      <div id="project-section" className="md:mr-16 xl:mr-32 scroll-mt-24">
+        <ProjectSection />
       </div>
     </>
   );

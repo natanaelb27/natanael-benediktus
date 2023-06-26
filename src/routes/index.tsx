@@ -1,5 +1,5 @@
 import { Navigate, Outlet, useRoutes } from "react-router-dom";
-import { Home } from "../pages";
+import { Home, ProjectDetail } from "../pages";
 import { Layout } from "../components";
 
 const Routes = () => {
@@ -11,6 +11,10 @@ const Routes = () => {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/project/:projectName",
+          element: <ProjectDetail />,
         },
       ],
     },

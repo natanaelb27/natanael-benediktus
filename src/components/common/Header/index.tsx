@@ -43,8 +43,11 @@ const Header = () => {
           >
             Experience
           </span>
-          <span className="font-semibold hover:text-red-400 cursor-pointer">
-            Projects
+          <span
+            onClick={() => handleClickScroll("project-section")}
+            className="font-semibold hover:text-red-400 cursor-pointer"
+          >
+            Project
           </span>
         </div>
         <div className="flex md:hidden">

@@ -71,8 +71,14 @@ const MobileMenu = ({ showModal, onClose }: ModalProps) => {
             >
               Experience
             </span>
-            <span className="w-full py-2 px-2 font-semibold hover:bg-slate-200 cursor-pointer">
-              Projects
+            <span
+              onClick={async () => {
+                closeMenu();
+                handleClickScroll("project-section");
+              }}
+              className="w-full py-2 px-2 font-semibold hover:bg-slate-200 cursor-pointer"
+            >
+              Project
             </span>
           </div>
         </div>
