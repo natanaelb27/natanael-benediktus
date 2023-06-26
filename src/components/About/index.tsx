@@ -1,5 +1,3 @@
-import { Button } from "react-daisyui";
-
 const About = () => {
   return (
     <div className="items-start flex flex-col md:flex-row gap-4 md:gap-16">
