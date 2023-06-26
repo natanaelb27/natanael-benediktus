@@ -1,11 +1,6 @@
-import { Button, Carousel, Divider } from "react-daisyui";
-import ProfilePicture from "../../assets/images/profile-picture.webp";
+import { Button } from "react-daisyui";
 
 const About = () => {
-  const buttonStyle = (value: string) => {
-    return <Button color="primary">{value}</Button>;
-  };
-
   return (
     <div className="items-start flex flex-col md:flex-row gap-4 md:gap-16">
       <h1 className="text-md text-right font-semibold md:basis-1/4">ABOUT</h1>
