@@ -6,27 +6,14 @@ import { useAppSelector } from "../../store/";
 import { selectCount } from "../../store/slices/counterSlice";
 import { Link } from "react-router-dom";
 import CV from "../../assets/others/natanael-benediktus.pdf";
+import { MouseEvent } from "react";
+import { openLink } from "../../utils/openLink";
+import { mailTo } from "../../utils/mailTo";
+import { MailToType } from "../../types/utils/mailTo";
+import { LINKEDIN_URL, GITHUB_URL, EMAIL } from "../../constants/links";
 
 const Home = () => {
   const count = useAppSelector(selectCount);
-
-  const openLink = (link: string) => {
-    window.open(link, "_blank");
-  };
-
-  const mailTo = (mailto: string, label: string) => {
-    return (
-      <Link
-        to="#"
-        onClick={(e) => {
-          window.location.href = mailto;
-          e.preventDefault();
-        }}
-      >
-        {label}
-      </Link>
-    );
-  };
 
   return (
     <div className="flex flex-col gap-12">
@@ -52,18 +39,26 @@ const Home = () => {
           Get in touch
         </span>
         <div className="flex gap-2">
-          <Button shape="circle" color="ghost" variant="outline">
+          <Button
+            shape="circle"
+            color="ghost"
+            variant="outline"
+            onClick={(event: MouseEvent) => {
+              const mailData: MailToType = {
+                e: event,
+                email: EMAIL,
+              };
+
+              mailTo(mailData);
+            }}
+          >
             <MdOutlineEmail className="text-2xl" />
           </Button>
           <Button
             shape="circle"
             color="ghost"
             variant="outline"
-            onClick={() =>
-              openLink(
-                "https://www.linkedin.com/in/natanael-benediktus-0601601b0"
-              )
-            }
+            onClick={() => openLink(LINKEDIN_URL)}
           >
             <FaLinkedin className="text-2xl" />
           </Button>
@@ -71,7 +66,7 @@ const Home = () => {
             shape="circle"
             color="ghost"
             variant="outline"
-            onClick={() => openLink("https://github.com/natanaelb27")}
+            onClick={() => openLink(GITHUB_URL)}
           >
             <FaGithub className="text-2xl" />
           </Button>

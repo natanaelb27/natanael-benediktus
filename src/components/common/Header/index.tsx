@@ -29,30 +29,27 @@ const Header = () => {
           Natan<span className="text-red-400">.</span>
         </a>
         <div className="hidden md:flex justify-start gap-5">
-          <a
+          <span
             onClick={() => handleScrollToTop()}
             className="font-semibold hover:text-red-400 cursor-pointer"
           >
             Home
-          </a>
-          <a
+          </span>
+          <span
             onClick={() => handleClickScroll("about-section")}
             className="font-semibold hover:text-red-400 cursor-pointer"
           >
             About
-          </a>
-          <a
+          </span>
+          <span
             onClick={() => handleClickScroll("experience-section")}
             className="font-semibold hover:text-red-400 cursor-pointer"
           >
             Experience
-          </a>
-          <a
-            href="/"
-            className="font-semibold hover:text-red-400 cursor-pointer"
-          >
+          </span>
+          <span className="font-semibold hover:text-red-400 cursor-pointer">
             Projects
-          </a>
+          </span>
         </div>
         <div className="flex md:hidden">
           <Button
