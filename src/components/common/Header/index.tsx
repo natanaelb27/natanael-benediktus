@@ -1,14 +1,9 @@
-import { useState } from "react";
 import { Button } from "react-daisyui";
 import { CgMenu } from "react-icons/cg";
-import { useAppDispatch, useAppSelector } from "../../../store";
-import {
-  mobileMenuClicked,
-  selectIsMenuOpen,
-} from "../../../store/slices/mobileMenuSlice";
+import { useAppDispatch } from "../../../store";
+import { mobileMenuClicked } from "../../../store/slices/mobileMenuSlice";
 
 const Header = () => {
-  const isMenuOpen = useAppSelector(selectIsMenuOpen);
   const dispatch = useAppDispatch();
 
   const handleClickScroll = (section: string) => {

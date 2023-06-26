@@ -2,9 +2,6 @@ import { Button } from "react-daisyui";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { MdOutlineEmail } from "react-icons/md";
-import { useAppSelector } from "../../store/";
-import { selectCount } from "../../store/slices/counterSlice";
-import { Link } from "react-router-dom";
 import CV from "../../assets/others/natanael-benediktus.pdf";
 import { MouseEvent } from "react";
 import { openLink } from "../../utils/openLink";
@@ -13,8 +10,6 @@ import { MailToType } from "../../types/utils/mailTo";
 import { LINKEDIN_URL, GITHUB_URL, EMAIL } from "../../constants/links";
 
 const Home = () => {
-  const count = useAppSelector(selectCount);
-
   return (
     <div className="flex flex-col gap-12">
       <span className="mt-2 mb-0 font-bold lg:text-5xl text-3xl">Hello!</span>

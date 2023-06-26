@@ -1,6 +1,4 @@
-import { Button, Carousel, Divider, Steps } from "react-daisyui";
 import WorkExperienceData from "../../data/workExperience.json";
-import Test from "../../assets/images/stickearn-logo.jpg";
 import moment from "moment";
 
 type WorkExperienceCareer = {
