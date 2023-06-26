@@ -6,16 +6,13 @@ import {
   mobileMenuClicked,
   selectIsMenuOpen,
 } from "../../store/slices/mobileMenuSlice";
+import { handleScrollToTop } from "../../utils/clickScroll";
 
 import { Footer, Header } from "../common";
 import { useScrollPosition } from "../../hooks";
 const Layout = () => {
   const scrollPosition = useScrollPosition();
   const isMenuOpen = useAppSelector(selectIsMenuOpen);
-
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <div className="min-h-screen">
