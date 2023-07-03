@@ -1,20 +1,23 @@
 [
   {
     "project_name": "Oceana",
-    "picture": "oceana.png",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, eligendi adipisci quos molestias rem.",
+    "gallery": [
+      {
+        "picture": "oceana.png",
+        "description": "home page"
+      },
+      {
+        "picture": "oceana.png",
+        "description": "product detail page"
+      },
+      {
+        "picture": "oceana.png",
+        "description": "order page"
+      }
+    ],
+    "brief": "A marketplace web application that connects buyers and sellers, providing a user-friendly platform for seamless online transactions",
+    "project_description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dicta odit ratione omnis, nam error eaque molestiae, est laborum velit dolor sunt eum eos. Explicabo fuga mollitia quae magni minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dicta odit ratione omnis, nam error eaque molestiae, est laborum velit dolor sunt eum eos. Explicabo fuga mollitia quae magni minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dicta odit ratione omnis, nam error eaque molestiae, est laborum velit dolor sunt eum eos. Explicabo fuga mollitia quae magni minima.",
+    "technical_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, eligendi adipisci quos molestias rem.",
     "tools": ["Go", "React"]
-  },
-  {
-    "project_name": "HAHAHA",
-    "picture": "oceana.png",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, eligendi adipisci quos molestias rem.",
-    "tools": ["Django"]
-  },
-  {
-    "project_name": "Athens",
-    "picture": "oceana.png",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, eligendi adipisci quos molestias rem.",
-    "tools": ["Java"]
   }
 ]

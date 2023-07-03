@@ -2,19 +2,7 @@
   {
     "project_name": "Oceana",
     "picture": "oceana.png",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, eligendi adipisci quos molestias rem.",
+    "description": "A marketplace web application that connects buyers and sellers, providing a user-friendly platform for seamless online transactions",
     "tools": ["Go", "React"]
-  },
-  {
-    "project_name": "HAHAHA",
-    "picture": "oceana.png",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, eligendi adipisci quos molestias rem.",
-    "tools": ["Django"]
-  },
-  {
-    "project_name": "Athens",
-    "picture": "oceana.png",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, eligendi adipisci quos molestias rem.",
-    "tools": ["Java"]
   }
 ]
