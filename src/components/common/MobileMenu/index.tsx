@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "react-daisyui";
 import { HiX } from "react-icons/hi";
 import {
   handleClickScroll,
   handleScrollToTop,
 } from "../../../utils/clickScroll";
+import { useOutsideAlerter } from "../../../hooks";
 
 type ModalProps = {
   showModal: boolean;
@@ -25,6 +26,9 @@ const MobileMenu = ({ showModal, onClose }: ModalProps) => {
     }, 100);
   };
 
+  const wrapperRef = useRef(null);
+  useOutsideAlerter({ ref: wrapperRef, callback: closeMenu });
+
   return (
     <div>
       {showModal ? (
@@ -39,7 +43,10 @@ const MobileMenu = ({ showModal, onClose }: ModalProps) => {
           showModal ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="bg-white py-5 px-5 h-full w-8/12 flex flex-col items-end">
+        <div
+          ref={showModal ? wrapperRef : null}
+          className="bg-white py-5 px-5 h-full w-8/12 flex flex-col items-end"
+        >
           <Button shape="circle" color="ghost" onClick={closeMenu}>
             <HiX className="text-2xl" />
           </Button>

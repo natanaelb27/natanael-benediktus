@@ -4,6 +4,7 @@ import {
   ExperienceSection,
   ProjectSection,
 } from "../../components";
+import { MotionDiv } from "../../components/common";
 const Home = () => {
   return (
     <>
@@ -13,15 +14,21 @@ const Home = () => {
       >
         <HomeSection />
       </div>
-      <div id="about-section" className="md:mr-16 xl:mr-32 scroll-mt-24">
-        <AboutSection />
-      </div>
-      <div id="experience-section" className="md:mr-16 xl:mr-32 scroll-mt-24">
-        <ExperienceSection />
-      </div>
-      <div id="project-section" className="md:mr-16 xl:mr-32 scroll-mt-24">
-        <ProjectSection />
-      </div>
+      <MotionDiv>
+        <div id="about-section" className="md:mr-16 xl:mr-32 scroll-mt-24">
+          <AboutSection />
+        </div>
+      </MotionDiv>
+      <MotionDiv>
+        <div id="experience-section" className="md:mr-16 xl:mr-32 scroll-mt-24">
+          <ExperienceSection />
+        </div>
+      </MotionDiv>
+      <MotionDiv>
+        <div id="project-section" className="md:mr-16 xl:mr-32 scroll-mt-24">
+          <ProjectSection />
+        </div>
+      </MotionDiv>
     </>
   );
 };

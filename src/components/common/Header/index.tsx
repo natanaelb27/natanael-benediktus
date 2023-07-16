@@ -17,7 +17,11 @@ const Header = () => {
   const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false);
 
   const menuClicked = () => {
-    setIsMenuClicked(!isMenuClicked);
+    setIsMenuClicked(true);
+  };
+
+  const closeMenu = () => {
+    setIsMenuClicked(false);
   };
 
   const isHome = window.location.pathname === "/";
@@ -68,7 +72,7 @@ const Header = () => {
             </Button>
           </div>
         </div>
-        <MobileMenu showModal={isMenuClicked} onClose={menuClicked} />
+        <MobileMenu showModal={isMenuClicked} onClose={closeMenu} />
       </header>
     );
   } else {
