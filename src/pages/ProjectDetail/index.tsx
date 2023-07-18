@@ -64,10 +64,11 @@ const ProjectDetail = () => {
             display="sequential"
             buttonStyle={buttonStyle}
           >
-            {projectDetailData?.gallery?.map((data) => {
+            {projectDetailData?.gallery?.map((data, i) => {
               const picture = require("../../assets/images/" + data.picture);
               return (
                 <Carousel.Item
+                  key={i}
                   onMouseEnter={onMouseEnterPicture}
                   onMouseLeave={onMouseLeavePicture}
                   className="w-full border-2"
@@ -113,7 +114,10 @@ const ProjectDetail = () => {
       <div className="flex gap-2 my-4 flex-wrap">
         {projectDetailData?.tools.map((tool, i) => {
           return (
-            <p className="my-0 lg:text-base text-sm py-1 px-2 border-dark border rounded font-medium font-inconsolata">
+            <p
+              key={i}
+              className="my-0 lg:text-base text-sm py-1 px-2 border-dark border rounded font-medium font-inconsolata"
+            >
               {tool}
             </p>
           );

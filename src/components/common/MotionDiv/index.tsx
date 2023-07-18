@@ -27,16 +27,16 @@ const MotionDiv: FC<MotionDivProps> = ({ children }) => {
     };
   }, []);
 
-  //   const scrollVariantDesktop = {
-  //     visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-  //     hidden_up: { opacity: 0, x: -100 },
-  //     hidden_down: { opacity: 0, x: 100 },
-  //   };
+    const scrollVariantDesktop = {
+      visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+      hidden_up: { opacity: 0, x: -100 },
+      hidden_down: { opacity: 0, x: 100 },
+    };
 
-  const scrollVariant = {
-    visible: { opacity: 1, transition: { duration: 1 } },
-    hidden_up: { opacity: 0 },
-    hidden_down: { opacity: 0 },
+  const scrollVariantMobile = {
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+    hidden_up: { opacity: 0, x: 0 },
+    hidden_down: { opacity: 0, x: 0 },
   };
 
   const control = useAnimation();
@@ -76,7 +76,7 @@ const MotionDiv: FC<MotionDivProps> = ({ children }) => {
   return (
     <motion.div
       ref={ref}
-      variants={scrollVariant}
+      variants={isMobile ? scrollVariantMobile : scrollVariantDesktop}
       initial="hidden_up"
       animate={control}
     >
