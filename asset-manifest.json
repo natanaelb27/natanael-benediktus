@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/natanael-benediktus/static/css/main.2e1be095.css",
+    "main.css": "/natanael-benediktus/static/css/main.6f35c817.css",
     "main.js": "/natanael-benediktus/static/js/main.2f4322dd.js",
     "static/js/787.a3ba616c.chunk.js": "/natanael-benediktus/static/js/787.a3ba616c.chunk.js",
     "static/media/work.gif": "/natanael-benediktus/static/media/work.4fe11661e9959d4b092f.gif",
@@ -10,12 +10,12 @@
     "static/media/profile-picture.webp": "/natanael-benediktus/static/media/profile-picture.7a6a6c54279a54d1977c.webp",
     "static/media/stickearn-logo.jpg": "/natanael-benediktus/static/media/stickearn-logo.f61d44a7244c542b4316.jpg",
     "index.html": "/natanael-benediktus/index.html",
-    "main.2e1be095.css.map": "/natanael-benediktus/static/css/main.2e1be095.css.map",
+    "main.6f35c817.css.map": "/natanael-benediktus/static/css/main.6f35c817.css.map",
     "main.2f4322dd.js.map": "/natanael-benediktus/static/js/main.2f4322dd.js.map",
     "787.a3ba616c.chunk.js.map": "/natanael-benediktus/static/js/787.a3ba616c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e1be095.css",
+    "static/css/main.6f35c817.css",
     "static/js/main.2f4322dd.js"
   ]
 }
