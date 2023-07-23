@@ -11,7 +11,7 @@ const Home = () => {
       <div
         id="home-section"
         // className="xl:min-h-[75vh] mt-8 mb-16 xl:mb-0 xl:mt-24 xl:pr-96"
-        className="flex items-center xl:min-h-[82.5vh] mt-8 mb-16 xl:mb-0 xl:mt-0 xl:pr-96"
+        className="flex items-center xl:min-h-[83vh] mt-8 mb-16 xl:mb-0 xl:mt-0 xl:pr-96"
 
       >
         <HomeSection />

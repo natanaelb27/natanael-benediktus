@@ -14,7 +14,8 @@
           "Conducted root cause analysis and resolved technical issues"
         ],
         "start_date": "02/2023",
-        "end_date": "Present"
+        "end_date": "Present",
+        "skills": ["Go"]
       },
       {
         "title": "Junior Engineer",
@@ -22,7 +23,8 @@
           "Participate in 6 months structured training covering software engineering fundamentals in full-stack web development"
         ],
         "start_date": "08/2022",
-        "end_date": "01/2023"
+        "end_date": "01/2023",
+        "skills": ["Go", "React", "Redis", "TypeScript", "SQL"]
       }
     ]
   },
@@ -38,7 +40,9 @@
           "Created Data Visualization"
         ],
         "start_date": "02/2022",
-        "end_date": "05/2022"
+        "end_date": "05/2022",
+        "skills": ["Python", "SQL"]
+
       }
     ]
   },
@@ -56,7 +60,8 @@
           "Created Data Visualization"
         ],
         "start_date": "07/2021",
-        "end_date": "01/2022"
+        "end_date": "01/2022",
+        "skills": ["Python", "R", "SQL"]
       }
     ]
   }

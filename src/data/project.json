@@ -3,6 +3,6 @@
     "project_name": "Oceana",
     "picture": "oceana.png",
     "description": "A marketplace web application that connects buyers and sellers, providing a user-friendly platform for seamless online transactions",
-    "tools": ["Go", "React"]
+    "tools": ["Go", "React", "TypeScript"]
   }
 ]

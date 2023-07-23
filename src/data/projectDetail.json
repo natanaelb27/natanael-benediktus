@@ -17,6 +17,6 @@
     ],
     "brief": "A marketplace web application that connects buyers and sellers, providing a user-friendly platform for seamless online transactions",
     "project_description": "Oceana is a marketplace application that connects buyers and sellers, allowing them to buy and sell products or services in a user-friendly environment. It offers personalized user profiles, detailed product listings, advanced search options, secure payments, and messaging capabilities. Oceana aims to enhance user experience, promote trust and safety, and support a wide range of product categories. The application provides convenience, accessibility, and increased market reach for sellers, while fostering a vibrant and engaged marketplace community.",
-    "tools": ["Go", "React"]
+    "tools": ["Go", "React", "TypeScript"]
   }
 ]

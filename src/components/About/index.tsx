@@ -33,7 +33,7 @@ const About = () => {
           blend allows me to approach challenges from a multidimensional
           perspective and find effective solutions that bridge the gap between
           data insights and practical implementation.
-          <br />
+          {/* <br />
           <br />
           Outside of the exciting world of technology, I have a range of hobbies
           and interests that keep me engaged and energized. I find great joy in
@@ -54,7 +54,7 @@ const About = () => {
           Balancing work and personal interests is crucial, as it allows me to
           recharge and bring fresh perspectives to my professional endeavors. By
           pursuing these hobbies, I find that I am able to maintain a healthy
-          work-life balance and approach challenges with renewed enthusiasm.
+          work-life balance and approach challenges with renewed enthusiasm. */}
           <br />
           <br />
           Thank you for taking the time to learn more about me. If you have any

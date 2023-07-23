@@ -116,7 +116,7 @@ const ProjectDetail = () => {
           return (
             <p
               key={i}
-              className="my-0 lg:text-base text-sm py-1 px-2 border-dark border rounded font-medium font-inconsolata"
+              className="my-0 lg:text-base text-sm py-1 px-2 border-blue-400 text-blue-400 border rounded font-medium font-inconsolata"
             >
               {tool}
             </p>
